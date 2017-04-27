@@ -1,0 +1,3 @@
+Get-ChildItem 'C:\Users\t335m233\Desktop\Rename_Test' -Filter "*(720p)*" | rename-item -newname { $_.name.substring(0,$_.name.length-10) } 
+Get-ChildItem 'C:\Users\t335m233\Desktop\Rename_Test' -Filter "*(1080p)*" | rename-item -newname { $_.name.substring(0,$_.name.length-11) } 
+Get-ChildItem 'C:\Users\t335m233\Desktop\Rename_Test'  | rename-item -newname  { $_.Name +".txt" }
